@@ -1,0 +1,19 @@
+{
+  "context": "assets",
+  "entry": {
+    "main": [
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ],
+    "customizer": [ 
+      "./scripts/customizer.js"
+    ]
+  },
+  "output": {
+    "path": "dist",
+    "publicPath": "/wp-content/themes/base-theme/dist"
+  },
+  "devUrl": "http://localhost:8888",
+  "devPort": 3000
+}
+
