@@ -7,6 +7,9 @@ import about_us from './routes/About';
 // Import npm dependencies
 import 'bootstrap/dist/js/bootstrap';
 
+// Import npm dependencies
+//import './util/modernizr-custom.js';
+
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
 const routes = {

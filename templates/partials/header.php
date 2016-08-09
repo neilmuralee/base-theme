@@ -1,5 +1,5 @@
 <nav class="navbar nav-primarynavbar-light bg-faded">
-  <div class="container fluid">
+  <div class="container">
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
       &#9776;
     </button>
