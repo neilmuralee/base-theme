@@ -56,3 +56,28 @@ array_walk($sage_includes, function ($file) {
         trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
     }
 });
+
+
+if( function_exists('acf_add_options_page') ) {
+    
+    // add parent
+    $parent = acf_add_options_page(array(
+        'page_title'    => 'Site Settings',
+        'menu_title'    => 'Site Settings',
+        'redirect'      => true
+    ));
+     
+    // add sub page
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Company Info',
+        'menu_title'    => 'Company Info',
+        'parent_slug'   => $parent['menu_slug'],
+    ));
+    
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Social Info',
+        'menu_title'    => 'Social Info',
+        'parent_slug'   => $parent['menu_slug'],
+    ));
+    
+}
